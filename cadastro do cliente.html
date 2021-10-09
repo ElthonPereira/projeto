@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+
+
+<html>
+
+    <head>
+        <meta charset="UTF-8"  lang="pt-br">
+        <title>SC cadastro de cliente</title>
+        <link rel="stylesheet" type="text/css" href="estilo.css">
+    </head>
+    <style>ul{list-style: none;}</style>
+     
+    <body>
+       <img src="aninimo.02.png"><br> 
+          <p><h2>cadastro:</h2></p>
+           <form>
+               <label>nome:</label>
+               <input type="text" name="nomecl" id="nome" placeholder="digite seu nome" required>&nbsp; &nbsp;
+               <label>sobrenome:</label>
+               <input type="text" name="sobrenomecl" id="sobrenome" placeholder="digite seu sobrenome" required><br><br>
+               <label>email:</label>
+               <input type="email" name="emailcl" placeholder="digite seu email"><br><br>
+               <label>idade</label>
+               <input type="date" name="idadecl" required>
+          </form>
+          
+          <datalist id="sexo">
+           <option value="masculino">
+           <option value="faminino">
+           <option value="prefiro não revelar">
+          </datalist>
+          <p>sexo:<input type="text" list="sexo" required/></p>
+          
+          <form>
+              <label>cpf:</label>
+              <input type="text" name="cpfcl" placeholder="digite seu cpf" required><br><br>
+              <label>numero:</label>
+              <input type="text" name="numerocl" placeholder="digite seu numero de celular" required>
+          </form><br>
+          
+          <input type="reset" name="limpar" placeholder="recusar">&nbsp; &nbsp;
+          <input type="submit" name="enviar" placeholder="concluir" >
+            
+          <ul>
+            <li>
+                <div id="barrasuperior"></div>
+            </li>
+            <li>
+               <img src="scorpionlogo.2.png" id="scorpion" >
+            </li>
+        </ul>
+        
+       
+     </body>
+
+
+
+</html>

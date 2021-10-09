@@ -1,0 +1,46 @@
+h2{
+    font-size: 30px;
+    font-style:inherit;
+}
+
+html{
+    background-color:rgb(246, 227, 117);
+}
+
+    
+body{
+    font-size: 17px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background: white;
+    width: 30%;
+    height: 700px;
+    text-align: center;
+    position: relative;
+    left: 650px;
+    top: 150px;
+    border:2px solid rgb(165, 157, 53);
+    border-radius: 10px;
+    
+   
+    
+    
+}  
+
+#scorpion{
+ width: 300px;
+ height: 100px; 
+ position: relative;
+ right: 800px;
+ bottom: 880px;
+}
+
+#barrasuperior{
+    background-color: black;
+    width: 1955px;
+    height: 120px; ;
+    position: relative;
+    bottom: 770px ;
+    right: 750px;
+
+}
+

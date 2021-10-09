@@ -1,0 +1,97 @@
+<!DOCTYPE hyml>
+
+<html>
+     <head>
+           <meta charset="UTF-8" lang="pt-br">
+           <title>tela de pagamento</title>
+           <link rel="stylesheet" type="text/css" href="2estilo.css">
+           
+     </head>
+      <style>ul{list-style: none};</style>
+  
+      <ul>
+        <li>
+            <div id="barrabranca1"></div>
+        </li>
+          <li>
+            <div id="titulo"><p><H1>titulo produto</H1></p></div> 
+          </li>
+          <li>
+              <div id="if"><p><h2>Informações do produto</h2></p></div>
+          </li>
+      </ul>
+
+      <p><h2>CADASTRO DE CARTÃO</h2></p>
+
+      <body>
+           <fieldset>
+            <datalist id="forma de pagamento">
+                <option value="cartão">
+                <option value="pix">
+                <option value="boleto">
+            </datalist>
+            <p>forma de pagamento:<input type="text" list="forma de pagamento"></p>
+             <legend><h3>Informações de pagamento</h3></legend>
+             <label>nome do titular:</label>
+             <input type="text" id="nometl" placeholder="titular" required><br><br>
+             <label>numero do cartão:</label>
+             <input type="text" id="cartão" placeholder="digite o numero aqui" required><br><br>
+             <label>data de validade:</label>
+             <input type="text" id="validadeCT" required><br><br>
+             <label>CVV:</label>
+             <input type="password" data-ls-module="charCounter" maxlength="3" id="CVV" placeholder="CVV" required><br><br>
+             <p><h3>bandeira de cartão</h3></p><br>
+             <label for="mastercard.1">mast</label>
+             <input type="checkbox" id="mastercard.1" value="mastercard" required>&nbsp; &nbsp;
+             <label for="visa.1">visa</label>
+             <input type="checkbox" id="visa.1" value="mastercard" required>&nbsp; &nbsp; &nbsp;
+             <label for="elo.1">elo</label>
+             <input type="checkbox" id="elo.1" value="elo" required><br><br>
+             
+             <input type="reset" id="cancelar" name="limpar" placeholder="recusar">&nbsp; &nbsp;
+          <input type="submit" id="enviar" name="enviar" placeholder="concluir" >
+
+           </fieldset>
+      </body>
+      
+      
+      <ul>
+          <li>
+            <img src="produto.1.jpg" id="produto">
+          </li>
+          <li>
+              <img src="amstercard.jpg" id="mastercard">
+          </li>
+          <li>
+              <img src="bp_visa_brazil.png" id="visa">
+          </li>
+          <li>
+              <img src="elo.png" id="elo" >
+          </li>
+         
+      </ul>
+              
+      <ul> 
+         <li>
+            <div id="barrasuperior"></div>   
+        </li>
+        
+           <li>
+                <img src="scorpionlogo.2.png" id="scorpion" >
+           </li>
+        
+           <li>
+            <div id="blackBar"></div>
+           </li>
+
+    </ul>
+
+    
+         
+          
+    
+      
+
+
+
+</html>
