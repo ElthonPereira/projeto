@@ -8,47 +8,99 @@
         <title>SC cadastro de cliente</title>
         <link rel="stylesheet" type="text/css" href="estilo.css">
     </head>
-    <style>ul{list-style: none;}</style>
-     
+
     <body>
-       <img src="aninimo.02.png"><br> 
-          <p><h2>cadastro:</h2></p>
-           <form>
-               <label>nome:</label>
-               <input type="text" name="nomecl" id="nome" placeholder="digite seu nome" required>&nbsp; &nbsp;
-               <label>sobrenome:</label>
-               <input type="text" name="sobrenomecl" id="sobrenome" placeholder="digite seu sobrenome" required><br><br>
-               <label>email:</label>
-               <input type="email" name="emailcl" placeholder="digite seu email"><br><br>
-               <label>idade</label>
-               <input type="date" name="idadecl" required>
-          </form>
-          
-          <datalist id="sexo">
-           <option value="masculino">
-           <option value="faminino">
-           <option value="prefiro não revelar">
-          </datalist>
-          <p>sexo:<input type="text" list="sexo" required/></p>
-          
-          <form>
+        <header>
+          <nav>
+              <a class="logo" href="/"></a>
+             <div class="mobile-menu">
+               <div class="line1"></div>
+               <div class="line2"></div>
+               <div class="line3"></div>
+             </div>
+              <ul class="nav-list">
+                <a href="pagina inicial.html"><li>inicio</li></a> &nbsp;  &nbsp;  &nbsp;  &nbsp; 
+                <a href="tela de pagamento.html"><li>carrinho</li></a> &nbsp;  &nbsp; &nbsp;   &nbsp; 
+                <a href="cadastro do cliente.html"><li>cadastro</li></a> &nbsp;  &nbsp;  &nbsp;  &nbsp; 
+              </ul>
+          </nav>
+       </header>
+
+          <main>
+            <img src="scorpionlogo.2.png" alt="/" id="scorpion">
+            <form>
+              <img src="aninimo.02.png" alt="/" id="anonimo">
+              <h1 id="cadastro">cadastro</h1>
+              <label>nome:</label>
+              <input type="text" id="nome" placeholder="digite seu nome" required> &nbsp;  &nbsp; 
+              <label>sobrenome:</label>
+              <input type="text" id="sobrenome" placeholder="digite seu sobrenome" required><br><br>
+              <div class="form-group">
+              <label for="phone" id="cell">Telefone:<span class="required"></span></label>
+                <input type="text" class="form-control" id="phone" name="phone" placeholder="(99) 9999-9999" pattern="(\([0-9]{2}\))\s([9]{1})?([0-9]{4})-([0-9]{4})" title="Número de telefone precisa ser no formato (99) 9999-9999" required="required" />
+              </div><br>
+              <label>email:</label>
+              <input type="email" id="email" placeholder="digite seu email" required><br><br>
+              <label>senha:</label>
+              <input type="password" id="password" placeholder="senha">
+              <button id="btn"><img src="682060.png" id="foto" alt=""></button>
+              <label>idade:</label>
+              <input type="date" id="idade"><br><br>
               <label>cpf:</label>
-              <input type="text" name="cpfcl" placeholder="digite seu cpf" required><br><br>
-              <label>numero:</label>
-              <input type="text" name="numerocl" placeholder="digite seu numero de celular" required>
-          </form><br>
-          
-          <input type="reset" name="limpar" placeholder="recusar">&nbsp; &nbsp;
-          <input type="submit" name="enviar" placeholder="concluir" >
+              <input type="text" name="cpf" placeholder="digite seu cpf" required \
+			        pattern="\d{3}\.\d{3}\.\d{3}-\d{2}" \
+			        title="Digite um CPF no formato: xxx.xxx.xxx-xx">
+		          <input type="submit" value="Verificar"><br><br>
+              <datalist id="sexo">
+                <option value="masculino"></option>
+                <option value="feminino"></option>
+                <option value="prefiro não revelar"></options>
+              </datalist>
+              <p>sexo:<input type="text" list="sexo" required/></p><br><br>
+              <input type="submit" class="enviar"></input>
+              <input type="reset" class="limpar" placeholder="limpar">
+            </form><br><br>
+        
+            <aside>
+              <h3>PARA CONTATO:</h3>
+              <ul>
+                <li><a href="https://www.instagram.com/scorpiongamess/">Instagram da loja</a></li>
+                <li><a href="#"><p class="wpploja">WhatsApp da loja:</p></a></li>
+                <li><a href="https://www.facebook.com/Scorpion-games-106513198166259">facebook da loja</a></li>
+                <li><a href="#"><p class="telefone">WhatsApp pessoal:</p></a></li>
+                <li><a href="#"><p class="email">email pessoal:</p></a></li>
+                <li><a href="https://www.instagram.com/elthon.pereira/">Instagram pessoal</a></li>
+                <li><a href="https://github.com/ElthonPereira">Github</a></li>
+              </ul>
+            </aside>
             
-          <ul>
-            <li>
-                <div id="barrasuperior"></div>
-            </li>
-            <li>
-               <img src="scorpionlogo.2.png" id="scorpion" >
-            </li>
-        </ul>
+
+          </main>
+          <script type="text/javascript">
+
+            var btn = document.getElementById('btn')
+   
+            btn.addEventListener('click', function(){
+   
+                let password = document.getElementById('password')
+   
+                if(password.type == "password"){
+                    password.type = "text"
+                    this.style.opacity = "1"
+   
+   
+                }else{
+                    password.type = "password"
+                    this.style.opacity = ".4"
+                }
+            })
+            
+           </script>
+
+          <script src="cadastro.js"></script>
+     
+        
+           
         
        
      </body>

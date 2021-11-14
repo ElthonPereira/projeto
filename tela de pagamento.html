@@ -1,92 +1,106 @@
 <!DOCTYPE hyml>
 
 <html>
-     <head>
-           <meta charset="UTF-8" lang="pt-br">
-           <title>tela de pagamento</title>
-           <link rel="stylesheet" type="text/css" href="2estilo.css">
-           
-     </head>
-      <style>ul{list-style: none};</style>
-  
-      <ul>
-        <li>
-            <div id="barrabranca1"></div>
-        </li>
-          <li>
-            <div id="titulo"><p><H1>titulo produto</H1></p></div> 
-          </li>
-          <li>
-              <div id="if"><p><h2>Informações do produto</h2></p></div>
-          </li>
-      </ul>
+    <header>
+        <meta charset="UTF-8"  lang="pt-br">
+        <link rel="stylesheet" href="2estilo.css">
+        <script src="jquery-3.6.0.min.js"></script>
+        <script src="jquery.mask.js"></script>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 
-      <p><h2>CADASTRO DE CARTÃO</h2></p>
+        <style>
+            body{background-color: rgb(246, 227, 117);
+            }
+            a{color: white;
+              text-decoration: none;}
+              a:hover{
+                  color: white;
+                  opacity: 0.7;
+              }
 
-      <body>
-           <fieldset>
-            <datalist id="forma de pagamento">
-                <option value="cartão">
-                <option value="pix">
-                <option value="boleto">
-            </datalist>
-            <p>forma de pagamento:<input type="text" list="forma de pagamento"></p>
-             <legend><h3>Informações de pagamento</h3></legend>
-             <label>nome do titular:</label>
-             <input type="text" id="nometl" placeholder="titular" required><br><br>
-             <label>numero do cartão:</label>
-             <input type="text" id="cartão" placeholder="digite o numero aqui" required><br><br>
-             <label>data de validade:</label>
-             <input type="text" id="validadeCT" required><br><br>
-             <label>CVV:</label>
-             <input type="password" data-ls-module="charCounter" maxlength="3" id="CVV" placeholder="CVV" required><br><br>
-             <p><h3>bandeira de cartão</h3></p><br>
-             <label for="mastercard.1">mast</label>
-             <input type="checkbox" id="mastercard.1" value="mastercard" required>&nbsp; &nbsp;
-             <label for="visa.1">visa</label>
-             <input type="checkbox" id="visa.1" value="mastercard" required>&nbsp; &nbsp; &nbsp;
-             <label for="elo.1">elo</label>
-             <input type="checkbox" id="elo.1" value="elo" required><br><br>
-             
-             <input type="reset" id="cancelar" name="limpar" placeholder="recusar">&nbsp; &nbsp;
-          <input type="submit" id="enviar" name="enviar" placeholder="concluir" >
+        </style>
+        
+        <title>SC cadastro</title>
+    </header>
+    <body >
 
-           </fieldset>
-      </body>
-      
-      
-      <ul>
-          <li>
-            <img src="produto.1.jpg" id="produto">
-          </li>
-          <li>
-              <img src="amstercard.jpg" id="mastercard">
-          </li>
-          <li>
-              <img src="bp_visa_brazil.png" id="visa">
-          </li>
-          <li>
-              <img src="elo.png" id="elo" >
-          </li>
+        <header>
+            <nav>
+                <a class="logo" href="/"></a>
+               <div class="mobile-menu">
+                 <div class="line1"></div>
+                 <div class="line2"></div>
+                 <div class="line3"></div>
+               </div>
+                <ul class="nav-list">
+                    <a href="pagina inicial.html"><li>inicio</li></a> &nbsp;  &nbsp;  &nbsp;  &nbsp; 
+                    <a href="tela de pagamento.html"><li>carrinho</li></a> &nbsp;  &nbsp; &nbsp;   &nbsp; 
+                    <a href="cadastro do cliente.html"><li>cadastro</li></a> &nbsp;  &nbsp;  &nbsp;  &nbsp; 
+                </ul>
+            </nav>
+         </header>
          
-      </ul>
-              
-      <ul> 
-         <li>
-            <div id="barrasuperior"></div>   
-        </li>
-        
-           <li>
-                <img src="scorpionlogo.2.png" id="scorpion" >
-           </li>
-        
-           <li>
-            <div id="blackBar"></div>
-           </li>
+         <main>
+             <img src="scorpionlogo.2.png" id="scp">
+             <form id="f1">
+                <img src="ps4.jpg" id="ps4">
+                 <p id="t1">Ps4 slim 500 GB</p>
+                 <h3 id="t2">R$2100</h3>
+             </form><br><br><br>
+               <p id="t3"> acompainha controle e cabos originais</p>
+               <p id="t4">até 12x de R$175</p>
+               <form id="f2">
+                   <h3>cadastre seu cartão:</h3><br><br>
+                   <label>inssira o nome do titulatar:</label>
+                   <input type="text" placeholder="titular" required><br><br>
+                   <label>Numero do cartão:</label>
+                   <input type="text" placeholder="Numero do cartão" id="Number" required><br><br>
+                   <label> Vlidade:</label>
+                   <input type="text" placeholder="data de validade" id="validade" required><br><br>
+                   <label>CVV:</label>
+                   <input type="text" placeholder="CVV" id="CVV" required><br><br>
+                   <label><h5>Bandeira do seu cartão:</h5></label><br>
+                   <label for="mastercard"></label>
+                   <input type="radio" id="master" name="radio">
+                   <img src="amstercard.jpg" id="mastercard">&nbsp; &nbsp;
+                   <label for="visa"></label>
+                   <input type="radio" id="visa" name="radio">
+                   <img src="bp_visa_brazil.png" id="visacard">&nbsp; &nbsp;
+                   <label for="elo"></label>
+                   <input type="radio" id="elo" name="radio">
+                   <img src="elo.png" id="elocard"><br><br>
+                   <button type="submit" class="btn btn-warning">enviar</button>
+               </form>
+               <form id="f3">
+                <h3 id="ti1">Descriçaõ do produto:</h3>
+                <p id="p1">O PlayStation 4, ou PS4 (como é mais conhecido) é um video game da Sony lançado em 2013. O console tem três versões principais: fat, slim e Pro. A primeira (e original) tem esse nome por causa do peso e conta com 500 GB de armazenamento. Já a edição Slim, mais leve que a anterior, pode ser encontrada com armazenamento de 500 GB ou de 1T. O console mais novo, PS4 Pro, foi lançado em 2016. Ele reproduz imagens em 4K e tem armazenamento de 1T. O preço do PS4 Pro varia entre R$ 1.500 e R$ 2.100. Enquanto o do PS4 Slim fica entre R$ 1.500 e R$ 2.000. As edições Slim e Pro têm 8GB de memória RAM GDDR5, leitor Blu-ray e sensor de movimento embutido no controle, o DualShock 4. O joystick também tem touchscreen e botão para compartilhamento. A maioria dos jogos atuais rodam no PS4, tendo versões melhoradas no PS4 Pro. Na lista de games compatíveis com o console da Sony estão FIFA, Far Cry 5, Minecraft, Injustice 2 e Call of Duty: Ghost, além dos exclusivo God of War (GoW), The Last of Us, Uncharted e muito mais.</p>
+                <img src="seta direita.png" id="sd">
+                <img src="seta esquerda.png" id="se">
+                </form>
+         </main>
+         <aside>
+            <h3>PARA CONTATO:</h3>
+            <ul>
+              <li><a href="https://www.instagram.com/scorpiongamess/">Instagram da loja</a></li>
+              <li><a href="#"><p class="wpploja">WhatsApp da loja:</p></a></li>
+              <li><a href="https://www.facebook.com/Scorpion-games-106513198166259">facebook da loja</a></li>
+              <li><a href="#"><p class="telefone">WhatsApp pessoal:</p></a></li>
+              <li><a href="#"><p class="email">email pessoal:</p></a></li>
+              <li id="instap"><a href="https://www.instagram.com/elthon.pereira/">Instagram pessoal</a></li>
+              <li><a href="https://github.com/ElthonPereira">Github</a></li>
+            </ul>
+          </aside>
+            <script>
+                $("#Number").mask("9999 9999 9999 9999");
+                $("#CVV").mask("999");
+                $("#validade").mask("99/9999");
+            </script>
 
-    </ul>
-
+         <script src="pagamento.js"></script>
+    </body>
+        
     
+
          
           
     

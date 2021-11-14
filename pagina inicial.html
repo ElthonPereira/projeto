@@ -4,83 +4,209 @@
         <meta charset="UTF-8"  lang="pt-br">
             <title>home</title>
             <link rel="stylesheet" type="text/css" href="3estilo.css">
-            <style>ul{list-style: none};</style>
-    }
-    </head>
+            <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+            <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+            <style>
+                body{background: linear-gradient(to right, rgb(246, 227, 117), rgb(214, 193, 72), rgb(231, 201, 29), rgb(214, 184, 12));
+                     animation: gradient 15s ease infinite;
+                }
+                @keyframes gradient{
+                  0%{
+                    background-position: 0% 50%;
+                  }
+                  50%{
+                    background-position: 100% 50%;
+                  }
+                  100%{
+                    background-position: 0% 50%;
+                  }
+                }
+
+                a{color: white;
+                  text-decoration: none;}
+                  a:hover{
+                      color: white;
+                      opacity: 0.7;
+                  }
+                  .carousel-control-next, .carousel-control-prev{
+                    width: 7%;
+                  }
+                  .carousel-control-next {
+                  right: 100px;}
+
+                  .carousel-control-prev {
+                  left: 100px;}
+                  
+                  .card {
+                     position: relative;
+                     display: flex;
+                     flex-direction: column;
+                     min-width: 0;
+                     word-wrap: break-word;
+                     background-color: #fff;
+                     background-clip: border-box;
+                     border: 2px solid rgb(241, 208, 18);
+                     border-radius: 3.25rem;
+                     top: 20px;
+                     left: 225px;}
+                     
+                     .img-fluid {
+                        max-width: 85%;
+                        height: auto;
+                        position: relative;
+                        top: 15px;}
+                      
+            </style>
+            
+   </head>
 
     <body>
-    <main>
-        <ul>
-    
-            <li>
-                <div id="BArraSuperior"></div>
-            </li>
-            <li>
-                <div id="SegundaBarraSuperior"></div>
-            </li>
-            <li>
-                <div id="BlocoMeio"></div>
-            </li>
-            <li>
-                <div id="CorAcimaMeio"></div>
-            </li>
-            <li>
-                <img src="scorpionlogo.2.png" id="scorpion">
-            </li>
-            <li>
-                <input type="text" id="pesquisa">
-            </li>
-           <li>
-               <img src="lupa_yellow-removebg-preview.png" id="lupa">
-           </li>
-           <li>
-            <div id="barraP1"></div>
-        </li>
-        <li>
-            <div id="barraP2"></div>
-        </li>
-        <li>
-            <div id="barraP3"></div>
-        </li>
-        <li>
-            <img src="produto.2.jpg" id="produto2">
-        </li>
-        <li>
-            <img src="produto.3.jpg" id="produto3" >
-       </li>
-       <li>
-        <img src="produto.1.jpg" id="produto">
-       </li>
-         <li>
-             <input type="submit" value="comprar" id="compra1">
-         </li>
-         <li>
-            <input type="submit" value="comprar" id="compra2">
-        <li>
-            <input type="submit"  value="comprar" id="compra3">
-        </li>
-    
-        </ul>
+        <header>
+            <nav>
+                <a class="logo" href="/"></a>
+               <div class="mobile-menu">
+                 <div class="line1"></div>
+                 <div class="line2"></div>
+                 <div class="line3"></div>
+               </div>
+                <ul class="nav-list">
+                      <a href="pagina inicial.html"><li>inicio</li></a> &nbsp;  &nbsp;  &nbsp;  &nbsp; 
+                      <a href="tela de pagamento.html"><li>carrinho</li></a> &nbsp;  &nbsp; &nbsp;   &nbsp; 
+                      <a href="cadastro do cliente.html"><li>cadastro</li></a> &nbsp;  &nbsp;  &nbsp;  &nbsp; 
+                </ul>
+            </nav>
+         </header>
+        <img src="scorpionlogo.2.png" id="scp">
+       
+       
+
+          <main>
+            <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="slid1.jpg" height="600px" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="slid3.png" height="600px" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="slid2.png" height="600px" class="d-block w-100" alt="...">
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+              <section>
+             <form id="f1">
+                 <h3 id="h1">produtos disponiveis no momento</h3>
+                 <div class="card mb-3" style="max-width: 540px;">
+                    <div class="row g-0">
+                      <div class="col-md-4">
+                        <img src="ps4.jpg" class="img-fluid rounded-start" alt="...">
+                      </div>
+                      <div class="col-md-8">
+                        <div class="card-body">
+                          <h5 class="card-title">PS4 SLIM 500 GB</h5>
+                          <p class="card-text">R$2100, ou 12x R$175 </p>
+                          <p class="card-text"><small class="text-muted">Ps4 slim 500 GB, acompainha cabos e controle oficial. Console modelo vitrine, nunca foi aberto ou teve um dono. </small></p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <a href="tela de pagamento.html"><button type="button" class="btn btn-warning">comprar</button></a>
+
+                  <div class="card mb-3" id="ps4-1" style="max-width: 540px;">
+                    <div class="row g-0">
+                      <div class="col-md-4">
+                        <img src="ps4.jpg" class="img-fluid rounded-start" alt="...">
+                      </div>
+                      <div class="col-md-8">
+                        <div class="card-body">
+                          <h5 class="card-title">PS4 SLIM 500 GB</h5>
+                          <p class="card-text">R$2100, ou 12x R$175 </p>
+                          <p class="card-text"><small class="text-muted">Ps4 slim 500 GB, acompainha cabos e controle oficial. Console modelo vitrine, nunca foi aberto ou teve um dono. </small></p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <a href="tela de pagamento.html"><button type="button" id="b1"  class="btn btn-warning">comprar</button></a>
+
+                  <div class="card mb-3" id="ps4-2" style="max-width: 540px;">
+                    <div class="row g-0">
+                      <div class="col-md-4">
+                        <img src="ps4.jpg" class="img-fluid rounded-start" alt="...">
+                      </div>
+                      <div class="col-md-8">
+                        <div class="card-body">
+                          <h5 class="card-title">PS4 SLIM 500 GB</h5>
+                          <p class="card-text">R$2100, ou 12x R$175 </p>
+                          <p class="card-text"><small class="text-muted">Ps4 slim 500 GB, acompainha cabos e controle oficial. Console modelo vitrine, nunca foi aberto ou teve um dono. </small></p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <a href="tela de pagamento.html"><button type="button" id="b2"  class="btn btn-warning">comprar</button></a>
+                
+              </form>
+          
+        </main>
+
         
-            <div id="jogos"><p><a href="">jogos</a></p></div>
-            <div id="consoles"><p></p><a href="">consoles</a></div>
-            <div id="outros"><p><a href="">outros</a></p></div>
-            <div id="valores1">valores</div>   
-            <div id="valores2">valores</div>   
-            <div id="valores3">valores</div>    
-            <div id="titulo1">titulo</div>
-            <div id="titulo2">titulo</div>
-            <div id="titulo3">titulo</div>
-            <div id="descrição1">descrição</div>
-            <div id="descrição2">descrição</div>
-            <div id="descrição3">descrição</div>
-    </main>   
-    <footer id="rodape"> 
-        
-    </footer>
-     
+        <aside id="a1">
+          <h3 id="h2">produtos futuros:</h3>
+
+          <div id="ft1"><div class="card"  style="width: 18rem;">
+            <img src="xboxone.jpg" id="img1" class="card-img-top"  alt="...">
+            <div class="card-body">
+              <p class="card-text">XBOX ONE 500 GB. Acompainha controle e cabos oficiais. Modelo vitrine, nunca foi aberto ou teve dono.</p>
+            </div>
+          </div>
+        </div>
+
+        <div id="ft2"><div class="card"  style="width: 18rem;">
+          <img src="ps3.jpg" id="img2" class="card-img-top"  alt="...">
+          <div class="card-body">
+            <p class="card-text">PS3 250 GB. Acompainha controle e cabos oficiais. Modelo seminovo, passou por processo de requalificação para ser vendido da melhor forma possivel.</p>
+          </div>
+        </div>
+      </div>
+
+      <div id="ft3"><div class="card"  style="width: 18rem;">
+        <img src="controle.jpg" id="img3" class="card-img-top"  alt="...">
+        <div class="card-body">
+          <p class="card-text">Controle xbox one. modelo semi novo, poco tempo de uso.</p>
+        </div>
+      </div>
+    </div>
+        </aside>
+     <footer>
+       <h3 id="h3">PARA CONTATO:</h3>
+       <ul>
+        <li><a href="https://www.instagram.com/scorpiongamess/">Instagram da loja</a></li>
+        <li><a href="#"><p class="wpploja">WhatsApp da loja:</p></a></li>
+        <li><a href="https://www.facebook.com/Scorpion-games-106513198166259">facebook da loja</a></li><br>
+        <li><a href="#"><p class="telefone">WhatsApp pessoal:</p></a></li>
+        <li><a href="#"><p class="email">email pessoal:</p></a></li>
+        <li id="instap"><a href="https://www.instagram.com/elthon.pereira/">Instagram pessoal</a></li>
+        <li><a href="https://github.com/ElthonPereira">Github</a></li>
+      </ul>
+     </footer>
+         
+
+        <script src="home.js"></script>
     </body>
 
 
-
+   
 </html>

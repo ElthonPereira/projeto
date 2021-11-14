@@ -1,113 +1,343 @@
-html{
-    background-color: rgb(246, 227, 117);
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+*{
+    margin: 0px;
+    padding: 0px;
 }
 
-#produto{
-    width: 300px;
-    height: 300px;
-    position: relative;
-    right: 690px;
-    bottom: 885px;
-  
-
-}
-
-#elo{
-    width: 40px;
-    height: 20px;
-    position: relative;
-    left: 35px;
-   bottom: 435px;
-
-}
-
-#mastercard{
-    width: 40px;
-    height: 20px;
-    position: relative;
-    bottom: 389px;
-    right: 100px;
-}
-
-#visa{
-    width: 40px;
-    height: 20px;
-    position: relative;
-    bottom: 412px;
-    right: 35px;
-     
-}
-#titulo{
-    position: relative;
-    bottom: 290px;
-    right: 400px;
-}
-
-
-#if{
-    position:relative;
-    bottom: 260px;
-    right: 380px;
-    
+main{
+    height: 80%;
 }
 
 body{
-    text-align: center;
-    position: relative;
-    top: 400px;
-    margin-top: -320px;
-    margin-bottom: 20%;
-}
-
-
-#scorpion{
-    width:300px;
-    height:100px;
-    position: relative;
-    bottom: 1590;
-    right: 750px;
-}
-
-#barrasuperior{
-    background-color: black;
-    width: 2295;
-    height: 120;
-    position: relative;
-    bottom: 1480px;
-    right: 440px;
-
-}
-
-#barrabranca1{
-    background: rgb(231, 221, 167);
-    width: 650px;
-    height: 400px;
-    position: relative;
-    left: 70px;
-    top: 60px;
-    border:2px solid rgb(165, 157, 53);
-    border-radius: 10px;
-}
+    background-color: rgb(246, 227, 117);
     
-fieldset{
-    width: 40%;
+
+    
+}
+
+a{
+    color: white;
+    text-decoration: none;
+    transition: 0.3s;
     position: relative;
-    left: 550px;
-    background: rgb(231, 221, 167);
-    border:2px solid rgb(165, 157, 53);
-    border-radius: 10px;
+    top: 10px;
+}
+
+a:hover{
+    opacity: 0.7;
+    color: white;
    
+} 
 
+#logo{
+    font-size: 24px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+}
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color:black;
+    height: 8vh;
+    box-shadow:1px 3px 15px #23232e;
+}
+
+.nav-list{
+    list-style: none;
+    display: flex;
     
 }
 
-#blackBar{
-    background-color: black;
-    width: 1955px; 
-    height: 250px;
+.nav-list li{
+    letter-spacing: 3px;
+    margin-left: 32px;
+    
+
+} 
+
+.mobile-menu{
+    display: none;
+    cursor: pointer;
+    
+}
+.mobile-menu div{
     position: relative;
-    right: 100px;
+    left: 980px;
+     width: 32px;
+     height: 2px;
+     background-color: #fff;
+     margin: 8px;
+     transition: 0.3s;
+ }
+
+ @media (max-width:999px) {
+   body{
+       overflow-x: hidden;
+   }  
+   .nav-list{
+       position:absolute;
+       top: 8vh;
+       right: 0;
+       width: 50vw;
+       height: 92vh;
+       background: #23232e;
+       flex-direction: column;
+       align-items: center;
+       justify-content: space-around;
+       transform: translateX(100%);
+       transition: transform 0.3s ease-in;
+       z-index: 1;
+   }
+ }
+
+ .nav-list li{
+     margin-left: 0;
+     opacity: 0;
+ }
+
+ .mobile-menu{
+     display: block;
+ }
+
+ .nav-list.active{
+     transform: translateX(0);
+ }
+
+ @keyframes navLinkFade {
+     from{
+       opacity: 0;
+       transform: translate(50px);  
+     }
+     to{
+       opacity: 1;
+       transform: translate(0);
+     }
+ 
+ }
+
+ .mobile-menu.active .line1{
+   transform: rotate(-45deg) translate(-8px, 8px);
+ }
+
+ .mobile-menu.active .line2{
+   opacity: 0;
+ }
+
+ .mobile-menu.active .line3{
+    transform: rotate(45deg) translate(-5px, -7px);
+ }
+
+
+ #scp{
+    width: 160px;
+    height: 90px;
+    position: relative;
+    bottom: 80px;
+    left: 190px;
+ }
+
+ #ps4{
+     width: 200px;
+     height: 200px;
+     position: relative;
+     left: 20px;
+     top: 20px;
+ }
+
+ #t1{
+    position: relative;
+    left: 60px;
+    top: 5px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#t2{
+   margin-top: 120px;
+   margin-left: 20px;
+   font-size: 35px;
+}
+
+#t3{
+   margin-left:312px;
+   position: relative;
+   bottom: 110px;
+   font-size: 13px;
+   z-index: 1;
+}
+
+#t4{
+   margin-left: 420px;
+   position: relative;
+   bottom: 10px;
+   z-index: 1;
 }
 
 
+ #f2{
+     text-align: center;
+     background-color: #fff;
+     width: 500px;
+     height: 450px;
+     position: relative;
+     left: 750px;
+     bottom: 340px;
+    border-radius: 10px;
+    border: 2px solid rgb(206, 195, 42);
+ }
+
+ #f3{
+     position: relative;
+     margin-left: 1480px;
+     position: relative;
+     bottom: 920px;
+     background-color: white;
+     width: 320px;
+     height: 700px;
+     border-radius: 10px;
+     border: 2px solid rgb(200, 191, 55);
+
+ }
+
+ #mastercard{
+    width: 40px;
+    height: 20px;
+    position: relative;
+    bottom: 3px;
+ }
+
+ #visacard{
+     width: 40px;
+     height: 20px;
+     position: relative;
+     bottom: 3px;
+ }
+
+ #elocard{
+    width: 40px;
+    height: 20px;
+    position: relative;
+    bottom: 3px;
+ }
+
+#f1{
+    position: relative;
+    top: 130px;
+    left: 50px;
+    display: flex;
+    background-color: white;
+    border-radius: 10px;
+    border:2px solid rgb(200, 191, 55);
+    width: 500px;
+    height:250px ;
+    z-index: 0;
+}
+
+#ti1{
+    height: 40px;
+    text-align: center;
+    background-color: rgb(233, 233, 35);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+#p1{
+    text-align: center;
+}
+
+#sd{
+    width: 100px;
+    height: 100px;
+    position: relative;
+    right: 880px;
+    bottom: 450px;
+}
+
+#se{
+    width: 100px;
+    height: 100px;
+    position: relative;
+    right: 280px;
+    bottom: 450px;
+}
+
+aside{
+    background-color: #23232e;
+    padding: 10px;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+aside h3{
+    background-color: black;
+    color: rgb(216, 216, 22);
+    margin: -10px -10px 0px -10px;
+    padding-top:5px;
+    padding-bottom: 5px;
+    padding-left: 10px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    box-shadow:1px 1px 10px #23232e ;
+}
+aside ul{
+    list-style-position: inside;
+    columns: 2;
+    padding-top: 20px;
+    color: transparent;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+aside a{
+    color: white;
+    text-decoration: none;
+}
+aside p{
+    color: white;
+    text-decoration: none;
+}
+aside li{
+    padding-bottom: 4px;
+}
+aside a:hover{
+    text-decoration: none;
+    font-size: 17px;
+    font-weight: bold;
+    transition-duration: 0.2s;
+    padding-top: 2px;
+}
+aside p.telefone{
+    padding-left: 20px;
+    position: relative;
+    bottom: 15px;
+}
+aside p.telefone:hover::after{
+    content: ' (81)98686-8768';
+}
+aside p.email{
+    padding-left: 20px;
+    position: relative;
+    
+    
+}
+aside p.email:hover::after{
+    content: ' elthinhop@gmail.com';
+}
+
+#cell{
+    position: relative;
+    left: 160px;
+}
+
+aside p.wpploja{
+    position: relative;
+    left: 20px;
+    
+}
+
+aside p.wpploja:hover::after{
+    content: " (81)9532-4609";
+}
+#instap{
+    margin-bottom: 10px;
+}

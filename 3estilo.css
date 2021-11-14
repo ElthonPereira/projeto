@@ -1,300 +1,377 @@
 
+*{
+    margin: 0px;
+    padding: 0px;
+}
 
-
-
+main{
+    height: 100%;
+  
+}
 
 body{
-        background-color:rgb(246, 227, 117);
-     
-}
-
-    main{
-   width: 20%;
-   height: 90px;
+    background: linear-gradient(to right, rgb(246, 227, 117), rgb(214, 193, 72), rgb(231, 201, 29), rgb(214, 184, 12));
+        animation: gradient 15s ease infinite;
    
+    height: 1722px;
 
-}
-   
-
-
-
-#scorpion{
-    width:290px;
-    height:90px;
-    position: relative;
-    bottom: 1455px;
-   
-}
-
-#produto{
-    width: 200px;
-    height: 200px;
-    position: relative;
-    bottom: 2565px;
-    left: 350px;
-}
-
-#produto2{
-    width: 200px;
-    height: 200px;
-    position: relative;
-    bottom: 1750px;
-    left: 350px;
-}
-
-#produto3{
-    width: 200px;
-    height: 200px;
-    position: relative;
-    bottom: 1550px;
-    left: 350px;
-}
-
-#BArraSuperior{
-    background-color: black;
-    width: 1955px;
-    height: 120px;
-    position: relative;
-    bottom: 26px;
-    right:100px ;
-}
-
-#SegundaBarraSuperior{
-    background-color: rgb(228, 228, 54);
-    width: 1955px;
-    height: 50px;
-    position: relative;
-    right: 100px;
-    bottom: 50px;
-}
-
-#BlocoMeio{
-    background-color:white;
-    width: 1250px;
-    height: 1200px;
-    position: relative;
-    left: 250px;
-    top: 100px;
-}
-
-#CorAcimaMeio{
-    background-color: rgb(228, 228, 54);
-    width: 1250px;
-    height: 70px;
-    position: relative;
-    bottom: 1170px;
-    left: 250px;
-}
-
-#jogos{
-    font-style:initial;
-    font-size: 25px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    text-decoration: black;
-    position: relative;
-    bottom: 3200px;
-    left: 870px;
     
 }
 
-#consoles{
-    font-style:initial;
-    font-size: 25px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    text-decoration: black;
+@keyframes gradient{
+    0%{
+      background-position: 0% 50%;
+    }
+    50%{
+      background-position: 100% 50%;
+    }
+    100%{
+      background-position: 0% 50%;
+    }
+  }
+
+a{
+    color: white;
+    text-decoration: none;
+    transition: 0.3s;
     position: relative;
-    bottom: 3252px;
-    left: 320px;
+    top: 10px;
 }
 
-#outros{
-    font-style:initial;
-    font-size: 25px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    text-decoration: black;
-    position: relative;
-    bottom: 3305px;
-    left: 1400px;
+a:hover{
+    opacity: 0.7;
+    color: white;
+   
+} 
 
+#logo{
+    font-size: 24px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+}
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color:black;
+    height: 8vh;
+    box-shadow:1px 3px 15px #23232e;
 }
 
-#pesquisa{
-    height: 25px;
-    width: 450px;
-    position: relative;
-    bottom: 1520px;
-    left: 1370px;
+.nav-list{
+    list-style: none;
+    display: flex;
     
 }
 
-#lupa{
-    width: 70px;
-    height: 40px;
-    position: relative;
-    bottom: 1560px;
-    left: 1300px;
+.nav-list li{
+    letter-spacing: 3px;
+    margin-left: 32px;
+    
+
+} 
+
+.mobile-menu{
+    display: none;
+    cursor: pointer;
+    
 }
-#barraP1{
-    background-color: rgb(246, 246, 246);
-    width: 1100px;
-    height: 300px;
+.mobile-menu div{
     position: relative;
-    bottom: 1300px;
-    left: 325px;
-    border:2px solid rgb(240, 227, 50);
-    border-radius: 10px;
-}
-
-#barraP2{
-    background-color: rgb(246, 246, 246);
-    width: 1100px;
-    height: 300px;
-    position: relative;
-    bottom: 1200px;
-    left: 325px;
-    border:2px solid rgb(240, 227, 50);
-    border-radius: 10px;
-
-}
-
-#barraP3{
-    background-color: rgb(246, 246, 246);
-    width: 1100px;
-    height: 300px;
-    position: relative;
-    bottom: 1100px;
-    left: 325px;
-    border:2px solid rgb(240, 227, 50);
-    border-radius: 10px;
-}
-
-#compra1{
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-style: initial;
-    font-size: 20px;
-    background-color: rgb(233, 233, 110);
-    color: white;
-    position: relative;
-    left: 1270px;
-    bottom: 2600px;
-    width: 100px;
-    height: 40px;
-
-
-}
-
-#compra2{ 
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-style: initial;
-    font-size: 20px;
-    background-color: rgb(233, 233, 110);
-    color: white;
-    position: relative;
-    left: 1270px;
-    bottom: 2230px;
-    width: 100px;
-    height: 40px;
-}
-
-#compra3{ 
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-style: initial;
-    font-size: 20px;
-    background-color: rgb(233, 233, 110);
-    color: white;
-    position: relative;
-    left: 1270px;
-    bottom: 1870px;
-    width: 100px;
-    height: 40px;
-}
-
-#valores1{
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-style: initial;
-    font-size: 50px;
-    position: relative;
-    bottom: 3050px;
-    left: 1250px;
-}
-
-#valores2{
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-style: initial;
-    font-size: 50px;
-    position: relative;
-    bottom: 2700px;
-    left: 1250px;
-}
-
-#valores3{
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-style: initial;
-    font-size: 50px;
-    position: relative;
-    bottom: 2350px;
-    left: 1250px;
-
-}
-
-#titulo1{ font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-style: initial;
-    font-size: 40px;
-    position: relative;
-    bottom: 2435px;
-    left: 600px;}
-
-#titulo2{
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-style: initial;
-    font-size: 40px;
-    position: relative;
-    bottom: 2885px;
-    left: 600px;}
-
-
-
-#titulo3{
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-style: initial;
-    font-size: 40px;
-    position: relative;
-    bottom: 3340px;
-    left: 600px;}
-
-
-
-#descrição1{
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-style: initial;
-    font-size: 40px;
-    position: relative;
-    bottom: 3295px;
-    left: 600px;
-}
-
-#descrição2{
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-style: initial;
-    font-size: 40px;
-    position: relative;
-    bottom: 2930px;
-    left: 600px;
-}
-
-#descrição3{
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-style: initial;
-    font-size: 40px;
-    position: relative;
-    bottom:2570px;
-    left: 600px;
-}
-
-
- a{
-     color: black;
-     text-decoration: none;
+    left: 980px;
+     width: 32px;
+     height: 2px;
+     background-color: #fff;
+     margin: 8px;
+     transition: 0.3s;
  }
 
+ @media (max-width:999px) {
+   body{
+       overflow-x: hidden;
+   }  
+   .nav-list{
+       position:absolute;
+       top: 8vh;
+       right: 0;
+       width: 50vw;
+       height: 92vh;
+       background: #23232e;
+       flex-direction: column;
+       align-items: center;
+       justify-content: space-around;
+       transform: translateX(100%);
+       transition: transform 0.3s ease-in;
+       z-index: 1;
+   }
+ }
+
+ .nav-list li{
+     margin-left: 0;
+     opacity: 0;
+ }
+
+ .mobile-menu{
+     display: block;
+ }
+
+ .nav-list.active{
+     transform: translateX(0);
+ }
+
+ @keyframes navLinkFade {
+     from{
+       opacity: 0;
+       transform: translate(50px);  
+     }
+     to{
+       opacity: 1;
+       transform: translate(0);
+     }
+ 
+ }
+
+ .mobile-menu.active .line1{
+   transform: rotate(-45deg) translate(-8px, 8px);
+ }
+
+ .mobile-menu.active .line2{
+   opacity: 0;
+ }
+
+ .mobile-menu.active .line3{
+    transform: rotate(45deg) translate(-5px, -7px);
+ }
+
+ #scp{
+    width: 160px;
+    height: 90px;
+    position: relative;
+    bottom: 80px;
+    left: 190px;
+    z-index: 1;
+    
+}
+    
+    .slide{
+        position: relative;
+        bottom: 90px;
+        z-index: 0;
+    }
+#carouselExampleControls{
+    padding-left: 70px;
+    padding-right: 70px;
+  
+}
+
+.carousel-control-next, .carousel-control-prev {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 7%;
+    color: #fff;
+    text-align: center;
+    background: 0 0;
+    border: 0;
+    opacity: .5;
+    transition: opacity .15s ease;
+    margin-left: 10px;
+}
+
+
+#f1{
+    height: 1123px;
+    width: 1000px;
+    position: relative;
+    left: 95px;
+    text-align: center;
+    background-color: white;
+    z-index: 0;
+    border: 10px rgb(202, 182, 69);
+    border-radius: 10px;
+}
+
+#h1{
+    position: relative;
+    top: 0px;
+    background-color: rgb(231, 228, 50);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    height: 40px;
+    
+}
+
+#ps4-1{
+    position: relative;
+    top: 130px;
+}
+
+#ps4-2{
+    position: relative;
+    top: 260px;
+}
+
+.btn-warning {
+    color: #000;
+    background-color: #ffc107;
+    border-color: #ffc107;
+    position: relative;
+    top: 60px;
+    width: 100px;
+    height: 50px;
+}
+
+#b1{
+    position: relative;
+    top: 183px;
+}
+
+#b2{
+    position: relative;
+    top: 301px;
+}
+    
+#a1{
+    text-align: center;
+    background-color: white;
+    position: relative;
+    left: 1300px;
+    width: 500px;
+    height: 1123px;
+    position: relative;
+    bottom: 1121px;
+    border-radius: 10px;
+}
+
+#h2{
+    background-color: rgb(231, 228, 50);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    height: 40px;
+}
+
+#ft1{
+    position: relative;
+    right: 110px;
+}
+
+#img1{
+    padding: 5%;
+}
+
+#ft2{
+    position: relative;
+    right: 110px;
+    top: 35px;
+}
+
+#img2{
+    padding: 5%;
+}
+
+#ft3{
+    position: relative;
+    right: 110px;
+    top: 70px;
+}
+
+#img3{
+    padding: 5%;
+}
+
+footer{
+    margin-bottom: 400px;
+}
+
+footer {
+    margin-bottom: 400px;
+    position: relative;
+    bottom: 995px;
+}
+
+footer{
+    background-color: #23232e;
+    padding: 10px;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+
+footer h3{
+    background-color: black;
+    color: rgb(216, 216, 22);
+    margin: -10px -10px 0px -10px;
+    padding-top:5px;
+    padding-bottom: 5px;
+    padding-left: 10px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    box-shadow:1px 1px 10px #23232e ;
+}
+
+footer ul{
+    list-style-position: inside;
+    columns:2;
+    column-count: 2;
+    padding-top: 20px;
+    color: transparent;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+footer a{
+    color: white;
+    text-decoration: none;
+}
+
+footer p{
+    color: white;
+    text-decoration: none;
+}
+
+footer li{
+    padding-bottom: 4px;
+}
+
+footer a:hover{
+    text-decoration: none;
+    font-size: 17px;
+    font-weight: bold;
+    transition-duration: 0.2s;
+ 
+}
+
+footer p.telefone{
+    padding-left: 20px;
+    position: relative;
+    bottom: 40px ;
+}
+
+footer p.telefone:hover::after{
+    content: ' (81)98686-8768';
+}
+
+footer p.email{
+    padding-left:20px;
+    position: relative;
+    top: 20px;
+  
+    
+}
+
+footer p.email:hover::after{
+    content: ' elthinhop@gmail.com';
+}
+
+footer p.wpploja{
+    margin-left: 25px;
+}
+
+footer p.wpploja:hover::after{
+    content: " (81)9532-4609";
+}
 
